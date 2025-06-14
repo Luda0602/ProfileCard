@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./ProfileCard.module.css";
-import myPhoto from "../../assets/my-photo.jpg";
+import photo from "../../assets/photo.jpg";
 
 interface ProfileProps {
   name: string;
@@ -15,7 +15,7 @@ export default function ProfileCard({ name, description, email }: ProfileProps) 
     <div className={styles.card}>
       <img
         className={styles.avatar}
-        src={myPhoto}
+        src={photo}
         alt={name}
       />
       <h2>{name}</h2>
